@@ -42,6 +42,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-P2MRK95');</script>
 <!-- End Google Tag Manager -->
 
+<script>
+    let prefix = ["https://vidantigordura.com/"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}(); </script>
+
 <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -410,27 +432,6 @@ if(searchKeyWordUrl)
 </div></div>
 </div>
 </div></div>
-<script>
-    let prefix = ["https://vidantigordura.com/"];
-
-function getParams() {
-    let t = "",
-        e = window.top.location.href,
-        r = new URL(e);
-    if (null != r) {
-        let a = r.searchParams.get("utm_source"),
-            n = r.searchParams.get("utm_medium"),
-            o = r.searchParams.get("utm_campaign"),
-            m = r.searchParams.get("utm_term"),
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-    }
-    return t
-}! function() {
-    var t = new URLSearchParams(window.location.search);
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-    })
-}(); </script>
 </div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
 <style id="bold_style_tmp_headline1-17755-132">#tmp_headline1-17755-132 .elHeadline b{ color: rgb(248, 148, 6);}</style>
