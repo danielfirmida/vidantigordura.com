@@ -1,40 +1,11 @@
-<!DOCTYPE html><html lang="en" class="clickfunnels-com wf-proximanova-i4-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-n7-active wf-active wf-proximanova-i3-active wf-proximanova-n3-active wf-proximanovasoft-n4-active wf-proximanovasoft-n7-active wf-proximasoft-n4-active wf-proximasoft-i4-active wf-proximasoft-i6-active wf-proximasoft-n6-active wf-proximasoft-i7-active wf-proximasoft-n7-active gr__app_clickfunnels_com bgCover " style="background-color: rgb(241, 241, 241);"><head data-next-url data-this-url="https://www.thewholesomehabit.com/the-wholesome-habit-lander-11628901913463">
-<meta charset="UTF-8">
-<script src="js/nr-1216.min.js"></script><script type="text/javascript" async src="js/vendor.js"></script><script async src="js/fbevents.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-fc902efb332119fff33","applicationID":"367981416","transactionName":"dFZWTENWVQ9QExdNRlJLSFlWXEpMRQBfXUYYSU1aXVBKC1AF","queueTime":0,"applicationTime":306,"agent":""}</script>
-<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-fc902efb332119fff33",applicationID:"367981416"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="facebook-domain-verification" content="rnmd7d8ut4ct0bsj3bsyp7e2yj59cu" />
 
-<meta content="utf-8" http-equiv="encoding">
-<meta name="viewport" content="initial-scale=1">
-<title>Método de 7 segundos</title>
-<meta class="metaTagTop" name="description" content="Discover how This " MORNING RITUAL" can change your LIFE right after this video..">
-<meta class="metaTagTop" name="keywords" content>
-<meta class="metaTagTop" name="author" content>
-<meta class="metaTagTop" property="og:image" content="https://images.unsplash.com/photo-1518458717367-249ba15389d2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw3MjE1MnwwfDF8c2VhcmNofDM2Mnx8ZXhlcmNpc2V8ZW58MHx8fHwxNjI4OTAyNzg1&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080" id="social-image">
-<meta property="og:title" content="20 sec tonic boosts healthy cells">
-<meta property="og:description" content="Discover how This " MORNING RITUAL" can change your LIFE right after this video..">
-<meta property="og:url" content="https://www.thewholesomehabit.com/the-wholesome-habit-lander-11628901913463">
-<meta property="og:type" content="website">
-<link rel="stylesheet" media="screen" href="css/lander.css">
-<link rel="canonical" href="https://www.thewholesomehabit.com/the-wholesome-habit-lander-11628901913463">
-<link rel="stylesheet" href="css/all.css">
-<link rel="stylesheet" href="css/v4-shims.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:400,700%7CDroid+Sans:400,700%7CRoboto:400,700%7CLato:400,700%7CPT+Sans:400,700%7CSource+Sans+Pro:400,600,700%7CNoto+Sans:400,700%7CPT+Sans:400,700%7CUbuntu:400,700%7CBitter:400,700%7CPT+Serif:400,700%7CRokkitt:400,700%7CDroid+Serif:400,700%7CRaleway:400,700%7CInconsolata:400,700" rel="stylesheet" type="text/css">
-<meta property="cf:funnel_id" content="RG55NTVQRmxXVWRZb3RJTmVSNm5pQT09LS1YckFDd1gxUW5lQ0JzL1hRdHZnVEtnPT0=--b4f6b9e630715eb58acd217c0096848b4d6e2922">
-<meta property="cf:page_id" content="ZVpqY2pGNklmeUNWKzU3QzFodmxzdz09LS0vcUlXYlFkS1FrTnhzOWoyWm1YM09nPT0=--030003fdb19250fd9d7c44ab31a05dc43af34cef">
-<meta property="cf:funnel_step_id" content="aGNkTnhIeUMyaEJ0K2FkTTY5VnZhUT09LS1PY1dGQ0k5alFkdk0zcFgvbzB5K3l3PT0=--5ece50e48ea451c3efeb14fef9c1a7f48436d28d">
-<meta property="cf:user_id" content="R3o1R1ZCRDcvMGZmelpPM3BLM1Nrdz09LS0xZUNVRktEcjNvYzRVZGhIK0g1enB3PT0=--671c52d9944e9f71a8932a0009844f57e27d1b00">
-<meta property="cf:account_id" content="SmtqN2VvSnNSRjFZTmZxU0hzSjZ2Zz09LS1Eb2ZFSk5RSVFCRnB3Q2tuNG85REFRPT0=--31fd4ad7e0b8d8264129ef35c8672ffdd31680ac">
-<meta property="cf:page_code" content="NTAxOTcxNjI=">
-<meta property="cf:mode_id" content="1">
-<meta property="cf:time_zone" content="UTC">
-<meta property="cf:app_domain" content="app.clickfunnels.com">
-<script src="js/application.js" async="async"></script>
-<style>
-    [data-timed-style='fade']{display:none}[data-timed-style='scale']{display:none}
-  </style>
-<link rel="icon" type="image/png" href>
-
-<!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -42,25 +13,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-P2MRK95');</script>
 <!-- End Google Tag Manager -->
 
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '323897806622451');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=323897806622451&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<!-- Meta Pixel Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/com.css">
+
+    <!-- Título da Página -->
+    <title>Protocolo Anti Gordura</title>
+    
+    <style type="text/css">
+      header {
+        color: white;
+        background-image: url("assets/img/bg.jpeg");
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+      }
+    </style>
+
+    <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -95,6 +71,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=790105068836038&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '446617260172376');
+  fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=446617260172376&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <!-- Meta Pixel Code -->
 <script>
@@ -124,872 +118,454 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '738220450847457');
+  fbq('init', '624012288695718');
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=738220450847457&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=624012288695718&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '898118760915680');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=898118760915680&amp;ev=PageView&amp;noscript=1"></noscript>
-<script type="text/javascript">function init(){for(var t=document.getElementsByTagName("img"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-src");if(i){for(var n=t[e].parentElement,a=0;0==a&&n;)a=n.scrollWidth,n=n.parentElement;a&&0<i.indexOf("images.clickfunnels.com")&&(i="//www.thewholesomehabit.com/hosted/images/cdn-cgi/image/fit=scale-down,width="+a+",quality=75/"+i),t[e].setAttribute("src",i)}}}window.addEventListener("load",init);</script></head>
-<body data-affiliate-param="affiliate_id" data-show-progress="true">
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none !important">
-<filter id="grayscale">
-<fecolormatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
-</filter>
-</svg>
-<div class="containerWrapper">
-<textarea id="tracking-body-top" style="display: none !important"></textarea>
-<input id="submit-form-action" value="redirect-url" data-url="#" data-ar-service data-ar-list data-webhook type="hidden">
-<div class="nodoHiddenFormFields hide">
-<input id="elHidden1" class="elInputHidden elInput" name="ad" type="hidden">
-<input id="elHidden2" class="elInputHidden elInput" name="tag" type="hidden">
-<input id="elHidden3" class="elInputHidden elInput" name type="hidden">
-<input id="elHidden4" class="elInputHidden elInput" name type="hidden">
-<input id="elHidden5" class="elInputHidden elInput" name type="hidden">
-</div>
-<div class="nodoCustomHTML hide"></div>
-<div class="modalBackdropWrapper" style="display: none; background-color: rgba(0, 0, 0, 0.4); height: 100%;"></div>
-<div class="container containerModal midContainer noTopMargin padding40-top padding40-bottom padding40H borderSolid cornersAll radius10 shadow0 bgNoRepeat emptySection borderLight border5px" id="modalPopup" data-title="Modal" data-block-color="0074C7" style="margin-top: 100px; padding-top: 40px; padding-bottom: 40px; border-color: rgb(28, 28, 28); outline: none; position: fixed; display: none; background-color: rgb(255, 255, 255);" data-trigger="none" data-animate="top" data-delay="0">
-<div class="containerInner ui-sortable">
-<div style="outline: none;" class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-4676810000" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row">
-<div style="outline: none;" id="col-full-308" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="full column">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin">
-<div style="outline: none; cursor: pointer;" class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-97443" data-de-type="headline" data-de-editing="false" data-title="optin headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" aria-disabled="false">
-<div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1" style="text-align: center;" data-bold="inherit" contenteditable="false">
-<b>Sign Up To Get The Full Course Right Now!</b><br>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div style="outline: none;" class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-5354310000" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row">
-<div style="outline: none;" id="col-left-667" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="Left column">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin">
-<div style="outline: none; cursor: pointer;" class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-97096" data-de-type="input" data-de-editing="false" data-title="name field" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="name" aria-disabled="false">
-<input placeholder="Enter Your Full Name" name="name" class="elInput elInput100 elAlign_left elInputMid elInputBR5 elInputIRight required0 elInputIColor elInputIName elInputStyle2 elInputBG2" data-type="extra" type="text">
-</div>
-</div>
-</div>
-<div style="outline: none;" id="col-right-836" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="Right column">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin">
-<div style="outline: none; cursor: pointer;" class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-85551" data-de-type="input" data-de-editing="false" data-title="email field" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="email" aria-disabled="false">
-<input placeholder="Enter Your Email Address" name="email" class="elInput elInput100 elAlign_left elInputMid elInputBR5 elInputIRight elInputIEmail elInputIColor required1 elInputStyle2 elInputBG2" data-type="extra" type="text">
-</div>
-</div>
-</div>
-</div>
-<div style="outline: none; margin-bottom: 0px;" class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-7814410000" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row">
-<div style="outline: none;" id="col-full-177" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="full column">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin">
-<div style="outline: none; cursor: pointer;" class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-85389" data-de-type="button" data-de-editing="false" data-title="sign up button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" aria-disabled="false">
-<a href="#submit-form" class="elButton elButtonColor1 elButtonFull elButtonSize2 elButtonBottomBorder" style="color: rgb(255, 255, 255); background-color: rgb(14, 141, 199);">
-<span class="elButtonMain">Yes, I am ready to get started today!</span>
-<span class="elButtonSub"></span>
-</a>
-</div>
-<div style="display: block; margin-top: 20px; outline: none; cursor: pointer;" class="de elHeadlineWrapper ui-droppable de-editable" id="headline-53195" data-de-type="headline" data-de-editing="false" data-title="spam text" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" aria-disabled="false">
-<div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 lh1 hsSize1" style="text-align: center; color: rgba(47, 47, 47, 0.529412);" data-bold="inherit" contenteditable="false">* we will not spam, rent, or sell your information... *<br>
-</div>
-</div>
-<style id="button_style_tmp_button-85389">#tmp_button-85389 .elButtonFlat:hover{background-color:#0b72a1!important;}#tmp_button-85389 .elButtonBottomBorder:hover{background-color:#0b72a1!important;}#tmp_button-85389 .elButtonSubtle:hover{background-color:#0b72a1!important;}#tmp_button-85389 .elButtonGradient{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(14,141,199)),color-stop(1,#0b72a1));background-image:-o-linear-gradient(bottom,rgb(14,141,199) 0%,#0b72a1 100%);background-image:-moz-linear-gradient(bottom,rgb(14,141,199) 0%,#0b72a1 100%);background-image:-webkit-linear-gradient(bottom,rgb(14,141,199) 0%,#0b72a1 100%);background-image:-ms-linear-gradient(bottom,rgb(14,141,199) 0%,#0b72a1 100%);background-image:linear-gradient(to bottom,rgb(14,141,199) 0%,#0b72a1 100%);}#tmp_button-85389 .elButtonGradient:hover{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(1,rgb(14,141,199)),color-stop(0,#0b72a1));background-image:-o-linear-gradient(bottom,rgb(14,141,199) 100%,#0b72a1 0%);background-image:-moz-linear-gradient(bottom,rgb(14,141,199) 100%,#0b72a1 0%);background-image:-webkit-linear-gradient(bottom,rgb(14,141,199) 100%,#0b72a1 0%);background-image:-ms-linear-gradient(bottom,rgb(14,141,199) 100%,#0b72a1 0%);background-image:linear-gradient(to bottom,rgb(14,141,199) 100%,#0b72a1 0%);}#tmp_button-85389 .elButtonBorder{border:3px solid rgb(14,141,199)!important;color:rgb(14,141,199)!important;}#tmp_button-85389 .elButtonBorder:hover{background-color:rgb(14,141,199)!important;color:#FFF!important;}</style>
-</div>
-</div>
-</div>
-</div>
-<div class="closeLPModal"><img src="images/closemodal.png" alt data-src="https://assets.clickfunnels.com/images/closemodal.png"></div>
-</div>
-<div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<style id="button_style_tmp_button-94931">#tmp_button-94931 .elButtonFlat:hover{background-color:#cf3323!important;}#tmp_button-94931 .elButtonBottomBorder:hover{background-color:#cf3323!important;}#tmp_button-94931 .elButtonSubtle:hover{background-color:#cf3323!important;}#tmp_button-94931 .elButtonGradient{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(222,76,61)),color-stop(1,#cf3323));background-image:-o-linear-gradient(bottom,rgb(222,76,61) 0%,#cf3323 100%);background-image:-moz-linear-gradient(bottom,rgb(222,76,61) 0%,#cf3323 100%);background-image:-webkit-linear-gradient(bottom,rgb(222,76,61) 0%,#cf3323 100%);background-image:-ms-linear-gradient(bottom,rgb(222,76,61) 0%,#cf3323 100%);background-image:linear-gradient(to bottom,rgb(222,76,61) 0%,#cf3323 100%);}#tmp_button-94931 .elButtonGradient:hover{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(1,rgb(222,76,61)),color-stop(0,#cf3323));background-image:-o-linear-gradient(bottom,rgb(222,76,61) 100%,#cf3323 0%);background-image:-moz-linear-gradient(bottom,rgb(222,76,61) 100%,#cf3323 0%);background-image:-webkit-linear-gradient(bottom,rgb(222,76,61) 100%,#cf3323 0%);background-image:-ms-linear-gradient(bottom,rgb(222,76,61) 100%,#cf3323 0%);background-image:linear-gradient(to bottom,rgb(222,76,61) 100%,#cf3323 0%);}#tmp_button-94931 .elButtonBorder{border:3px solid rgb(222,76,61)!important;color:rgb(222,76,61)!important;}#tmp_button-94931 .elButtonBorder:hover{background-color:rgb(222,76,61)!important;color:#FFF!important;}</style>
-<style id="bold_style_tmp_headline1-90167">#tmp_headline1-90167 .elHeadline b{color:rgb(222,76,61);}</style>
-<style id="bold_style_headline-90754-143">#headline-90754-143 .elHeadline b{ color: rgb(45, 45, 45);}</style>
-<div class="container noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 emptySection shadow40 midContainer bgCover" id="section--56696" data-title="Section" data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(224, 211, 211); margin-top: 30px;" data-trigger="none" data-animate="fade" data-delay="500">
-<div class="containerInner ui-sortable">
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--56821" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;" data-hide-on>
-<div id="col-full-188" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elCustomJs elMargin0 ui-droppable de-editable" id="tmp_customjs-18789" data-de-type="customjs" data-de-editing="false" data-title="Custom JS / HTML" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="elCustomJSBg">CUSTOM JAVASCRIPT / HTML</div>
-<div class="elCustomJS_code" data-custom-js="<script>
-jQuery(document).ready(function($){
-    URLModifier('tid'); // replace VTID to any key
-});
-function URLModifier(customKey)
-{
-var searchKeyWord = 'utm_campaign'; // replace utm_campaign to any key you want to search for
-var searchKeyWordUrl = getParamFromURL(searchKeyWord);
-if(searchKeyWordUrl)
-    {
-      $('a').each(function() {
-            var currentLinkUrl = $(this).attr('href');
-            if(typeof currentLinkUrl !== " undefined") Anchor Links { var modifiedUrl="currentLinkUrl+(currentLinkUrl.match(/\?/)" ? '&' : '?') + customKey '=" + searchKeyWordUrl;
-        $(this).attr(" href', modifiedUrl); } else Image currentImgLinkUrl="$(this).attr('data-imagelink');" modifiedImgUrl="currentImgLinkUrl+(currentImgLinkUrl.match(/\?/)" data-imagelink', modifiedImgUrl); }); function getParamFromURL(t) a="new" RegExp("[?&]"+t+"="([^&#]*)").exec(window.location.href);" return null="==a?null:a[1]" < script>
-" data-displaytype="htmlregular"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--70685" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-full-155" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-12758" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" data-imagelink="https://vidantigordura.com/" aria-disabled="false">
-<img src="images/Play-_-Tummy-still.png" class="elIMG ximg" alt data-imagelink="https://vidantigordura.com/" data-src="//www.thewholesomehabit.com/hosted/images/39/f287c1bc2949c997b8e801926026c8/Play-_-Tummy-still.png">
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--67264" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 0px; padding-bottom: 0px; margin: 0px; outline: none; background-color: rgba(255, 255, 255, 0);">
-<div id="col-full-118" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-30430-112-131-170-183" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer; display: block; font-family: " Fjalla One", Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Fjalla+One" data-element-theme="customized" data-elbuttontype="1" data-hide-on>
-<a href="https://vidantigordura.com/" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elButtonFluid elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elBTNone elButtonBlock mfs_25" style="color: rgb(255, 255, 255); background-color: rgba(103, 38, 181, 0.82); font-size: 34px;" id="undefined-53-53-700-481">
-<span class="elButtonMain"><i class="fa fa_prepended         "></i> Assista o vídeo agora</span>
-<span class="elButtonSub mfs_19"></span>
-</a>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-49309" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 15px; outline: none; cursor: pointer; font-family: " Patua One", Helvetica, sans-serif !important;" data-google-font="Patua+One" aria-disabled="false" data-hide-on>
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_17" style="text-align: center; font-size: 24px; color: rgb(71, 71, 71);" data-bold="inherit" data-gramm="false" contenteditable="false">
-<div>
-<span style="font-family: inherit;">"Ficamos tão intrigados quando descobrimos essa simples rotina ancestral que nos ajudou a secar muito e diminuir mais de 4 tamanhos de roupa, especialmente para mim e meu marido que temos mais de 40 anos! "</span><br>
-</div>
-<div>
-<br><div>- Roberta, Fundadora da Comunidade do Hábito Saudável </div>
-</div>
-</h2>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-36310" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 25px; outline: none; cursor: pointer; display: block; background-color: rgba(0, 0, 0, 0); font-family: Ranga, Helvetica, sans-serif !important;" shadows into light two helvetica sans-serif aria-disabled="false" data-google-font="Ranga" data-hide-on>
-<div class="ne elHeadline hsSize3 elMargin0 elBGStyle0 lh1 shadow0 deNormalLS deCapitalize hsTextShadow0 mfs_25" style="text-align: center; color: rgb(48, 160, 92); font-size: 52px; background-color: rgba(0, 0, 0, 0);" data-bold="inherit" contenteditable="false" spellcheck="false">Esse simples método sempre é amor a primeira vista em nossa comunidade!</div>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-28953" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 30px; outline: none; cursor: pointer; background-color: rgba(136, 136, 136, 0); display: none; font-family: Nunito, Helvetica, sans-serif !important;" data-google-font="Nunito" aria-disabled="false">
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center; font-size: 26px; color: rgb(255, 255, 255); background-color: rgba(136, 136, 136, 0);" data-bold="inherit" data-gramm="false" contenteditable="false" data-opacity="1">This tool uses mathematics and biology to help you improve in all areas of life: health, wealth, relationships and career. </h2>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--47378" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-left-128" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-55766" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="images/pexels-photo-7500324.jpg" class="elIMG ximg" alt height="350" data-src="//www.thewholesomehabit.com/hosted/images/77/254d58ad14477485580fb3586bf037/pexels-photo-7500324.jpg">
-</div>
-</div>
-</div>
-<div id="col-right-146" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"><div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-11941" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer; font-family: Nunito, Helvetica, sans-serif !important;" data-google-font="Nunito" aria-disabled="false" data-hide-on>
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 mfs_12" data-bold="inherit" style="text-align: center; font-size: 16px; color: rgb(71, 71, 71);" data-gramm="false" contenteditable="false">Não tem nada a ver com dietas milagrosas ou pilulas mágicas, muito menos exercícios, mas uma simples combinação que você mistura para criar essa potente bebida tônica, baseado em ingredientes de uma das ilhas mais saudáveis e antigas do mundo: Okinawa no Japão..  <div>
-</div>
-<div><br></div>
-<div>Simplesmente tomamos antes das 10h da manhã, para assim, obtermos os resultados mais surpreendentes de poderosos antioxidantes, melhoria da digestão e aceleramento metabólico durante todo o dia. Isso nos dá uma disposição e uma confiança que não víamos desde os 20 anos!!</div>
-</div>
-</div></div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--95370" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none; color: rgb(255, 255, 255); background-color: rgba(45, 45, 45, 0);">
-<div id="col-left-148" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-92037" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="images/2659008.png" class="elIMG ximg" alt data-src="//www.thewholesomehabit.com/hosted/images/5d/1d3d76749e4d62a1146966e7e44b91/2659008.png">
-</div>
-</div>
-</div>
-<div id="col-right-112" class="innerContent col_right ui-resizable col-md-8" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-27265" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(48, 160, 92);" data-gramm="false" contenteditable="false"><b>Aumento de Energia</b></div>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-65525" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; font-size: 13px; color: rgb(96, 96, 96);" data-gramm="false" contenteditable="false">A poderosa mistura de potentes antioxidantes para gerar uma resposta anti-inflamatória saudável enquanto equilibra os níveis de energia. Nos sentimos com bastante energia, confiantes e revitalizados<div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--95370-145" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none; color: rgb(255, 255, 255); background-color: rgba(45, 45, 45, 0);">
-<div id="col-left-148-121" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-92037-133" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="images/6860219.png" class="elIMG ximg" alt data-src="//www.thewholesomehabit.com/hosted/images/31/babf2f56854e3ea29684776c8a2949/6860219.png">
-</div>
-</div>
-</div>
-<div id="col-right-112-101" class="innerContent col_right ui-resizable col-md-8" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-27265-163" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(48, 160, 92); background-color: rgba(45, 45, 45, 0);" data-gramm="false" contenteditable="false"><b>Melhora na Saúde Intestinal</b></div>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-28131" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; font-size: 13px; color: rgb(96, 96, 96);" data-gramm="false" contenteditable="false">A mistura única de enzimas digestivas no "tônico" (bebida) ajuda a melhorar seu sistema digestivo, a chave para melhorar o controle de peso, de maneira eficaz.</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--95370-145-166" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none; color: rgb(255, 255, 255); background-color: rgba(45, 45, 45, 0);">
-<div id="col-left-148-121-153" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-92037-133-167" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="images/9163612.png" class="elIMG ximg" alt data-src="//www.thewholesomehabit.com/hosted/images/98/042cea7d704947805786d5175527f8/9163612.png">
-</div>
-</div>
-</div>
-<div id="col-right-112-101-116" class="innerContent col_right ui-resizable col-md-8" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-27265-163-180" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(48, 160, 92);" data-gramm="false" contenteditable="false"><b>Metabolismo Acelerado em até 10x</b></div>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-39017" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; font-size: 13px; color: rgb(96, 96, 96);" data-gramm="false" contenteditable="false">
-<div>Sentimo-nos enérgicos, confiantes e revitalizados devido à mistura de potentes antioxidantes que comprovadamente aumentam as propriedades anti-inflamatórias e equilibram os seus níveis de energia. Aumentando surpreendentemente a perfomance do metabolismo.</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--95370-145-126-130" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none; color: rgb(242, 202, 133); background-color: rgba(45, 45, 45, 0);">
-<div id="col-left-148-121-173-181" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-92037-133-124-144" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="images/4866076.png" class="elIMG ximg" alt data-src="//www.thewholesomehabit.com/hosted/images/37/f6a5c9ad5b4cdfa30c034c5307ae38/4866076.png">
-</div>
-</div>
-</div>
-<div id="col-right-112-101-116-141" class="innerContent col_right ui-resizable col-md-8" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-27265-163-180-123" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(48, 160, 92);" data-gramm="false" contenteditable="false"><b>Tudo Natural e sem Contra indicações </b></div>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-39017-180" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; font-size: 13px; color: rgb(96, 96, 96);" data-gramm="false" contenteditable="false">Este poderoso tônico é feito de ingredientes naturais, além de ser aprovado e fabricado em uma instalação registrada pela ANVISA no Brasil, o que o torna seguro para consumir.  </div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--76309" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-full-120" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-19057" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 15px; outline: none; cursor: pointer; font-family: " Open Sans", Helvetica, sans-serif !important;" data-google-font="Open+Sans" aria-disabled="false" data-hide-on>
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 mfs_25 hsTextShadow0" style="text-align: center; font-size: 24px; color: rgb(45, 45, 45);" data-bold="inherit" data-gramm="false" contenteditable="false">Está pronto para saber como fazer? </h2>
-</div>
-<div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-30430-112-131-170-183-163" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer; display: block; font-family: " Fjalla One", Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Fjalla+One" data-element-theme="customized" data-elbuttontype="1" data-hide-on>
-<a href="https://vidantigordura.com/" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elButtonFluid elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elBTNone elButtonBlock mfs_25" style="color: rgb(255, 255, 255); background-color: rgba(103, 38, 181, 0.82); font-size: 34px;" id="undefined-53-53-700-481-130">
-<span class="elButtonMain"><i class="fa fa_prepended         "></i> Assista o vídeo agora</span>
-<span class="elButtonSub mfs_19"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container noTopMargin padding40-top padding40-bottom padding40H noBorder borderSolid border3px cornersAll bgNoRepeat emptySection fullContainer shadow40 radius0" id="section--23272" data-title="Section" data-block-color="0074C7" style="padding-top: 10px; padding-bottom: 10px; outline: none; background-color: rgb(6, 50, 82); margin-top: 35px;" data-trigger="none" data-animate="fade" data-delay="500" data-hide-on>
-<div class="containerInner ui-sortable"><div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--32665-128" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone" style="padding-top: 10px; padding-bottom: 20px; margin: 0px auto; width: 60%; max-width: 100%; outline: none;">
-<div id="col-full-164-139" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"><div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-68925" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 40px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" data-google-font="Lato" aria-disabled="false">
-<div class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_12" style="text-align: center; font-size: 16px; color: rgb(136, 136, 136);" data-bold="inherit" data-gramm="false" contenteditable="false">
-<a href="http://www.thewholesomehabit.com/privacy-policy1" id="link-99030" class target="_self" rel="noopener noreferrer" style="color: rgb(157, 195, 252);">Privacy Policy </a>  |   <a href="http://www.thewholesomehabit.com/dmca" id="link-3520-485" class target="_self" style="color: rgb(157, 195, 252);">Terms of Service</a>   | <a href="https://www.thewholesomehabit.com/earnings-disclaimer1" id="link-63971" class target="_self" rel="noopener noreferrer" style="color: rgb(157, 195, 252);">Earnings Disclaimer</a> | <a href="https://www.thewholesomehabit.com/dmca" id="link-25815" class target="_self" rel="noopener noreferrer" style="color: rgb(157, 195, 252);">DMCA </a>| <a href="https://www.thewholesomehabit.com/contact-us" id="link-57879" class target="_self" rel="noopener noreferrer" style="color: rgb(157, 195, 252);">Contact Us</a>  <div> <a href="https://www.facebook.com/The-Wholesome-Habit-106517654912606" id="link-680-242" class target="_self" style="color: rgb(157, 195, 252);">The Wholesome Habit Facebook Page</a><div>Copyright 2021 - The Wholesome Habit  - All Rights Reserved</div>
-<div><br></div>
-<div>This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</div>
-<div><br></div>
-<div>Disclaimer: All the information provided is only for knowledge gain and educational use. It is recommended to do the proper due diligence prior to beginning any type of program.  </div>
-</div>
-</div>
-</div></div>
-</div>
-</div></div>
-<script>
-    let prefix = ["https://vidantigordura.com/"];
 
-function getParams() {
-    let t = "",
-        e = window.top.location.href,
-        r = new URL(e);
-    if (null != r) {
-        let a = r.searchParams.get("utm_source"),
-            n = r.searchParams.get("utm_medium"),
-            o = r.searchParams.get("utm_campaign"),
-            m = r.searchParams.get("utm_term"),
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-    }
-    return t
-}! function() {
-    var t = new URLSearchParams(window.location.search);
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-    })
-}(); </script>
-</div>
-<div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<style id="bold_style_tmp_headline1-17755-132">#tmp_headline1-17755-132 .elHeadline b{ color: rgb(248, 148, 6);}</style>
-<style id="bold_style_headline-82394-141">#headline-82394-141 .elHeadline b{ color: rgb(255, 255, 255);}</style>
-<style id="bold_style_headline-90754-143">#headline-90754-143 .elHeadline b{ color: rgb(248, 148, 6);}</style>
-<style id="bold_style_headline-90754-143-133">#headline-90754-143-133 .elHeadline b{ color: rgb(248, 148, 6);}</style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sans-serif%7CFjalla+One%7CPatua+One%7CRanga%7CNunito%7Csans-serif%7CNunito%7Csans-serif%7COpen+Sans%7CFjalla+One%7CLato%7C%7C" id="custom_google_font">
-<style id="bold_style_headline-90754-143-181">#headline-90754-143-181 .elHeadline b{ color: rgb(45, 45, 45);}</style>
-<style id="bold_style_tmp_headline1-17755-132-105">#tmp_headline1-17755-132-105 .elHeadline b{ color: rgb(228, 59, 44);}</style>
-<style id="bold_style_headline-33344">#headline-33344 .elHeadline b{ color: rgb(228, 59, 44);}</style>
-<style id="bold_style_headline-71552">#headline-71552 .elHeadline b{ color: rgb(45, 45, 45);}</style>
-<style id="bold_style_headline-57255">#headline-57255 .elHeadline b{ color: rgb(45, 45, 45);}</style>
-<style id="bold_style_headline-67119">#headline-67119 .elHeadline b{ color: rgb(45, 45, 45);}</style>
-<style id="bold_style_headline-82394-141-127">#headline-82394-141-127 .elHeadline b{ color: rgb(255, 227, 0);}</style>
-<style id="bold_style_headline-83730">#headline-83730 .elHeadline b{ color: rgb(255, 227, 0);}</style>
-<style id="bold_style_headline-61689">#headline-61689 .elHeadline b{ color: rgb(228, 59, 44);}</style>
-<style id="bold_style_headline-42433">#headline-42433 .elHeadline b{ color: rgb(255, 227, 0);}</style>
-<style id="bold_style_headline-36310">#headline-36310 .elHeadline b{ color: rgb(228, 59, 44);}</style>
-<style id="button_style_tmp_button-30430-112-131-170">#tmp_button-30430-112-131-170 .elButtonFlat:hover{ background-color: #4400bb !important;} 
-#tmp_button-30430-112-131-170 .elButtonBottomBorder:hover{ background-color: #4400bb !important;}
-#tmp_button-30430-112-131-170 .elButtonSubtle:hover{ background-color: #4400bb !important;}
-#tmp_button-30430-112-131-170 .elButtonGradient{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(87, 0, 238)), color-stop(1, #4400bb));                     background-image: -o-linear-gradient(bottom, rgb(87, 0, 238) 0%, #4400bb 100%);                     background-image: -moz-linear-gradient(bottom, rgb(87, 0, 238) 0%, #4400bb 100%);                     background-image: -webkit-linear-gradient(bottom, rgb(87, 0, 238) 0%, #4400bb 100%);                     background-image: -ms-linear-gradient(bottom, rgb(87, 0, 238) 0%, #4400bb 100%);                     background-image: linear-gradient(to bottom, rgb(87, 0, 238) 0%, #4400bb 100%);                 }
-#tmp_button-30430-112-131-170 .elButtonGradient:hover{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgb(87, 0, 238)), color-stop(0, #4400bb));                     background-image: -o-linear-gradient(bottom, rgb(87, 0, 238) 100%, #4400bb 0%);                     background-image: -moz-linear-gradient(bottom, rgb(87, 0, 238) 100%, #4400bb 0%);                     background-image: -webkit-linear-gradient(bottom, rgb(87, 0, 238) 100%, #4400bb 0%);                     background-image: -ms-linear-gradient(bottom, rgb(87, 0, 238) 100%, #4400bb 0%);                     background-image: linear-gradient(to bottom, rgb(87, 0, 238) 100%, #4400bb 0%);                 }
-#tmp_button-30430-112-131-170 .elButtonBorder{                    border: 3px solid rgb(87, 0, 238) !important;                     color: rgb(87, 0, 238) !important;                 }
-#tmp_button-30430-112-131-170 .elButtonBorder:hover{                      background-color:rgb(87, 0, 238) !important;                      color: #FFF !important;                   }
-</style>
-<style id="button_style_tmp_subheadline-28953">#tmp_subheadline-28953 .elButtonFlat:hover{ background-color: #6e6e6e !important;} 
-#tmp_subheadline-28953 .elButtonBottomBorder:hover{ background-color: #6e6e6e !important;}
-#tmp_subheadline-28953 .elButtonSubtle:hover{ background-color: #6e6e6e !important;}
-#tmp_subheadline-28953 .elButtonGradient{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(136, 136, 136, 0)), color-stop(1, #6e6e6e));                     background-image: -o-linear-gradient(bottom, rgba(136, 136, 136, 0) 0%, #6e6e6e 100%);                     background-image: -moz-linear-gradient(bottom, rgba(136, 136, 136, 0) 0%, #6e6e6e 100%);                     background-image: -webkit-linear-gradient(bottom, rgba(136, 136, 136, 0) 0%, #6e6e6e 100%);                     background-image: -ms-linear-gradient(bottom, rgba(136, 136, 136, 0) 0%, #6e6e6e 100%);                     background-image: linear-gradient(to bottom, rgba(136, 136, 136, 0) 0%, #6e6e6e 100%);                 }
-#tmp_subheadline-28953 .elButtonGradient:hover{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(136, 136, 136, 0)), color-stop(0, #6e6e6e));                     background-image: -o-linear-gradient(bottom, rgba(136, 136, 136, 0) 100%, #6e6e6e 0%);                     background-image: -moz-linear-gradient(bottom, rgba(136, 136, 136, 0) 100%, #6e6e6e 0%);                     background-image: -webkit-linear-gradient(bottom, rgba(136, 136, 136, 0) 100%, #6e6e6e 0%);                     background-image: -ms-linear-gradient(bottom, rgba(136, 136, 136, 0) 100%, #6e6e6e 0%);                     background-image: linear-gradient(to bottom, rgba(136, 136, 136, 0) 100%, #6e6e6e 0%);                 }
-#tmp_subheadline-28953 .elButtonBorder{                    border: 3px solid rgba(136, 136, 136, 0) !important;                     color: rgba(136, 136, 136, 0) !important;                 }
-#tmp_subheadline-28953 .elButtonBorder:hover{                      background-color:rgba(136, 136, 136, 0) !important;                      color: #000 !important;                   }
-</style>
-<style id="button_style_headline-36310">#headline-36310 .elButtonFlat:hover{ background-color: #000000 !important;} 
-#headline-36310 .elButtonBottomBorder:hover{ background-color: #000000 !important;}
-#headline-36310 .elButtonSubtle:hover{ background-color: #000000 !important;}
-#headline-36310 .elButtonGradient{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, #000000));                     background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);                     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);                     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);                     background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);                     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);                 }
-#headline-36310 .elButtonGradient:hover{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(0, 0, 0, 0)), color-stop(0, #000000));                     background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 100%, #000000 0%);                     background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 100%, #000000 0%);                     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 100%, #000000 0%);                     background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0) 100%, #000000 0%);                     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 100%, #000000 0%);                 }
-#headline-36310 .elButtonBorder{                    border: 3px solid rgba(0, 0, 0, 0) !important;                     color: rgba(0, 0, 0, 0) !important;                 }
-#headline-36310 .elButtonBorder:hover{                      background-color:rgba(0, 0, 0, 0) !important;                      color: #000 !important;                   }
-</style>
-<style id="button_style_tmp_paragraph-27265-163">#tmp_paragraph-27265-163 .elButtonFlat:hover{ background-color: #131313 !important;} 
-#tmp_paragraph-27265-163 .elButtonBottomBorder:hover{ background-color: #131313 !important;}
-#tmp_paragraph-27265-163 .elButtonSubtle:hover{ background-color: #131313 !important;}
-#tmp_paragraph-27265-163 .elButtonGradient{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(45, 45, 45, 0)), color-stop(1, #131313));                     background-image: -o-linear-gradient(bottom, rgba(45, 45, 45, 0) 0%, #131313 100%);                     background-image: -moz-linear-gradient(bottom, rgba(45, 45, 45, 0) 0%, #131313 100%);                     background-image: -webkit-linear-gradient(bottom, rgba(45, 45, 45, 0) 0%, #131313 100%);                     background-image: -ms-linear-gradient(bottom, rgba(45, 45, 45, 0) 0%, #131313 100%);                     background-image: linear-gradient(to bottom, rgba(45, 45, 45, 0) 0%, #131313 100%);                 }
-#tmp_paragraph-27265-163 .elButtonGradient:hover{                    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(45, 45, 45, 0)), color-stop(0, #131313));                     background-image: -o-linear-gradient(bottom, rgba(45, 45, 45, 0) 100%, #131313 0%);                     background-image: -moz-linear-gradient(bottom, rgba(45, 45, 45, 0) 100%, #131313 0%);                     background-image: -webkit-linear-gradient(bottom, rgba(45, 45, 45, 0) 100%, #131313 0%);                     background-image: -ms-linear-gradient(bottom, rgba(45, 45, 45, 0) 100%, #131313 0%);                     background-image: linear-gradient(to bottom, rgba(45, 45, 45, 0) 100%, #131313 0%);                 }
-#tmp_paragraph-27265-163 .elButtonBorder{                    border: 3px solid rgba(45, 45, 45, 0) !important;                     color: rgba(45, 45, 45, 0) !important;                 }
-#tmp_paragraph-27265-163 .elButtonBorder:hover{                      background-color:rgba(45, 45, 45, 0) !important;                      color: #000 !important;                   }
-</style>
-<style id="button_style_tmp_button-30430-112-131-170-183">#tmp_button-30430-112-131-170-183 .elButtonFlat:hover{ background-color: #541f93 !important;} 
-#tmp_button-30430-112-131-170-183 .elButtonBottomBorder:hover{ background-color: #541f93 !important;}
-#tmp_button-30430-112-131-170-183 .elButtonSubtle:hover{ background-color: #541f93 !important;}
-#tmp_button-30430-112-131-170-183 .elButtonGradient{                                                background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(103, 38, 181, 0.82)), color-stop(1, #541f93));                                                 background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                             }
-#tmp_button-30430-112-131-170-183 .elButtonGradient:hover{                                                background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(103, 38, 181, 0.82)), color-stop(0, #541f93));                                                 background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                             }
-#tmp_button-30430-112-131-170-183 .elButtonGradient2{    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(103, 38, 181, 0.82)), color-stop(1, #541f93));     background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%); }
-#tmp_button-30430-112-131-170-183 .elButtonGradient2:hover{    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(103, 38, 181, 0.82)), color-stop(0, #541f93));     background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%); }
-#tmp_button-30430-112-131-170-183 .elButtonBorder{                        border: 3px solid rgba(103, 38, 181, 0.82) !important;                         color: rgba(103, 38, 181, 0.82) !important;                     }
-#tmp_button-30430-112-131-170-183 .elButtonBorder:hover{                          background-color:rgba(103, 38, 181, 0.82) !important;                          color: #000 !important;                       }
-</style>
-<style id="button_style_tmp_button-30430-112-131-170-183-163">#tmp_button-30430-112-131-170-183-163 .elButtonFlat:hover{ background-color: #541f93 !important;} 
-#tmp_button-30430-112-131-170-183-163 .elButtonBottomBorder:hover{ background-color: #541f93 !important;}
-#tmp_button-30430-112-131-170-183-163 .elButtonSubtle:hover{ background-color: #541f93 !important;}
-#tmp_button-30430-112-131-170-183-163 .elButtonGradient{                                                background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(103, 38, 181, 0.82)), color-stop(1, #541f93));                                                 background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                                 background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 0%, #541f93 100%);                                             }
-#tmp_button-30430-112-131-170-183-163 .elButtonGradient:hover{                                                background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(103, 38, 181, 0.82)), color-stop(0, #541f93));                                                 background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                                 background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 0%);                                             }
-#tmp_button-30430-112-131-170-183-163 .elButtonGradient2{    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(103, 38, 181, 0.82)), color-stop(1, #541f93));     background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%);     background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 30%, #541f93 80%); }
-#tmp_button-30430-112-131-170-183-163 .elButtonGradient2:hover{    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(1, rgba(103, 38, 181, 0.82)), color-stop(0, #541f93));     background-image: -o-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -moz-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -webkit-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: -ms-linear-gradient(bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%);     background-image: linear-gradient(to bottom, rgba(103, 38, 181, 0.82) 100%, #541f93 30%); }
-#tmp_button-30430-112-131-170-183-163 .elButtonBorder{                        border: 3px solid rgba(103, 38, 181, 0.82) !important;                         color: rgba(103, 38, 181, 0.82) !important;                     }
-#tmp_button-30430-112-131-170-183-163 .elButtonBorder:hover{                          background-color:rgba(103, 38, 181, 0.82) !important;                          color: #000 !important;                       }
-</style>
-<input type="hidden" name="cf-state-county-dropdown-feature-enabled" value="true">
-</div>
-<style id="custom-css"></style>
-<input type="hidden" value="50197162" id="page-id">
-<input type="hidden" value="50197162" id="root-id">
-<input type="hidden" value="core" id="variant-check">
-<input type="hidden" value="3020271" id="user-id">
-<input type="hidden" value id="cf-cid">
-<input type="hidden" value="false" id="cf-page-oto">
-<input type="hidden" value="false" id="ff-can-use-payment-intent-on-funnel-payments">
-<script type="text/javascript">
-    window.CFAppDomain = "app.clickfunnels.com"
-    window.domainIsCFInternal = "false" == "true"
-  </script>
-<script src="js/lander.js"></script>
-<div id="fb-root"></div>
-<script async>
-window.addEventListener('load', function(){
-	(function(d, s, id){
-	  if($('.fbCommentsPlaceholder').size()>0){
-	   var js, fjs = d.getElementsByTagName(s)[0];
-	   if (d.getElementById(id)) {return;}
-	   js = d.createElement(s); js.id = id;
-	   js.src = "https://connect.facebook.net/en_US/sdk.js";
-	   fjs.parentNode.insertBefore(js, fjs);
-	  }
-	 }(document, 'script', 'facebook-jssdk'));
-});
- </script>
+<!-- Meta Pixel Code -->
 <script>
-  window.cfFacebookInitOptions = {
-    appId            : 246441615530259,
-    autoLogAppEvents : false,
-    status           : true,
-    xfbml            : true,
-    version          : "v3.3"
-  };
-  window.fbAsyncInit = function() {
-    FB.init(window.cfFacebookInitOptions);
-  
-    // Iterates over all .fb-comments elements on the page, and renders them using the FB SDK.
-    // It only runs if we have not told the FB.init() to render XFBML on page load
-    var renderFacebookComments = function(renderXFBMLAtLoadTime) {
-      // If we have already marked XFBML to render at page load time, do not proceed.
-      if(renderXFBMLAtLoadTime) { return; }
-  
-      var comments = document.getElementsByClassName('fb-comments');
-      var i = 0;
-      var len = comments.length;
-      var comment = null;
-      for(; i < len; i++) {
-        comment = comments[i];
-        FB.XFBML.parse(comment.parentElement); // comments need to be rendered/parsed from their parent element.
-      }
-    }
-  
-    renderFacebookComments(true);
-  };
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '323897806622451');
+  fbq('track', 'ViewContent');
 </script>
-<!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-<![endif]-->
-<form target="_parent" data-cf-form-action="true" action="https://www.thewholesomehabit.com/the-wholesome-habit-lander-11628901913463" method="post" id="cfAR" style="display:none">
-<span data-cf-form-fields="true"></span>
-<input id="cf_contact_name" name="contact[name]" data-cf-form-field="name" placeholder="name" data-stripe="name">
-<input id="cf_contact_first_name" name="contact[first_name]" data-cf-form-field="first_name" placeholder="first_name" data-recurly="first_name">
-<input id="cf_contact_last_name" name="contact[last_name]" data-cf-form-field="last_name" placeholder="last_name" data-recurly="last_name">
-<input id="cf_contact_email" name="contact[email]" data-cf-form-field="email" placeholder="email">
-<input id="cf_contact_phone" name="contact[phone]" data-cf-form-field="phone" placeholder="phone" data-recurly="phone">
-<input id="cf_contact_address" name="contact[address]" data-cf-form-field="address" placeholder="address" data-stripe="address_line1" data-recurly="address1">
-<input id="cf_contact_city" name="contact[city]" data-cf-form-field="city" placeholder="city" data-stripe="address_city" data-recurly="city">
-<input id="cf_contact_state" name="contact[state]" data-cf-form-field="state" placeholder="state" data-stripe="address_state" data-recurly="state">
-<input id="cf_contact_country" name="contact[country]" data-cf-form-field="country" placeholder="country" data-stripe="address_country" data-recurly="country">
-<input id="cf_contact_zip" name="contact[zip]" data-cf-form-field="zip" placeholder="ZIP" data-stripe="address_zip" data-recurly="postal_code">
-<input id="cf_contact_shipping_address" name="contact[shipping_address]" data-cf-form-field="shipping_address" placeholder="shipping_address" data-stripe="shipping_address">
-<input id="cf_contact_shipping_city" name="contact[shipping_city]" data-cf-form-field="shipping_city" placeholder="shipping_city" data-stripe="shipping_city">
-<input id="cf_contact_shipping_state" name="contact[shipping_state]" data-cf-form-field="shipping_state" placeholder="shipping_state" data-stripe="shipping_state">
-<input id="cf_contact_shipping_country" name="contact[shipping_country]" data-cf-form-field="shipping_country" placeholder="shipping_country" data-stripe="shipping_country">
-<input id="cf_contact_shipping_zip" name="contact[shipping_zip]" data-cf-form-field="shipping_zip" placeholder="shipping_ZIP" data-stripe="shipping_zip">
-<input id="cf_contact_vat_number" name="contact[vat_number]" data-cf-form-field="vat_number" data-recurly="vat_number">
-<input id="cf_contact_affiliate_id" name="contact[affiliate_id]" data-cf-form-field="affiliate_id" data-param="affiliate_id">
-<input id="cf_contact_cf_affiliate_id" name="contact[cf_affiliate_id]" data-cf-form-field="cf_affiliate_id" data-param="cf_affiliate_id">
-<input id="cf_cf_affiliate_id" name="cf_affiliate_id" data-param="cf_affiliate_id">
-<input id="cf_contact_affiliate_aff_sub" name="contact[aff_sub]" data-cf-form-field="aff_sub" data-param="aff_sub">
-<input id="cf_contact_affiliate_aff_sub2" name="contact[aff_sub2]" data-cf-form-field="aff_sub2" data-param="aff_sub2">
-<input id="cf_contact_time_zone" name="time_zone" data-cf-form-field="time_zone" placeholder="time_zone">
-<input id="utm_source" name="utm_source" data-cf-form-field="utm_source" data-param="utm_source">
-<input id="utm_medium" name="utm_medium" data-cf-form-field="utm_medium" data-param="utm_medium">
-<input id="utm_campaign" name="utm_campaign" data-cf-form-field="utm_campaign" data-param="utm_campaign">
-<input id="utm_term" name="utm_term" data-cf-form-field="utm_term" data-param="utm_term">
-<input id="utm_content" name="utm_content" data-cf-form-field="utm_content" data-param="utm_content">
-<input id="cf_uvid" name="cf_uvid" data-cf-form-field="cf_uvid">
-<input type="text" name="webinar_delay" id="webinar_delay" placeholder="Webinar Delay">
-<span data-cf-product-template="true">
-<input type="radio" name="purchase[product_id]" value data-storage="false">
-<input type="checkbox" name="purchase[product_ids][]" value data-storage="false">
-</span>
-<span data-cf-product-variations-template="true">
-<input type="checkbox" class="pvPurchaseProductName" name="purchase[product_variants][][product_id]" value data-storage="false">
-<input type="checkbox" class="pvPurchaseProductVariantName" name="purchase[product_variants][][product_variant_id]" value data-storage="false">
-<input type="input" class="pvPurchaseProductVariantQuantity" name="purchase[product_variants][][quantity]" value data-storage="false">
-</span>
-<input id="cf_contact_number" data-stripe="number" data-storage="false" data-recurly="number">
-<input id="cf_contact_month" data-stripe="exp-month" data-storage data-recurly="month">
-<input id="cf_contact_year" data-stripe="exp-year" data-storage data-recurly="year">
-<input id="cf_contact_month_year" data-stripe="exp" data-storage>
-<input id="cf_contact_cvc" data-stripe="cvc" data-storage="false" data-recurly="cvv">
-<input type="hidden" name="purchase[payment_method_nonce]" data-storage="false">
-<input type="hidden" name="purchase[order_saas_url]" data-storage="false">
-<input type="submit">
-<input name="contact[cart_affiliate_id]" value type="hidden" style="display:none;" data-param="affiliate">
-</form>
-<span class="countdown-time" style="display:none;"></span>
-<span class="webinar-last-time" style="display:none;"></span>
-<span class="webinar-ext" style="display:none;"></span>
-<span class="webinar-ot" style="display:none;"></span>
-<span class="contact-created" style="display:none;"></span>
-<script>
-      window.addEventListener('load', function () {
-      });
-  </script>
-<div class="otoloading" style="display: none;">
-<div class="otoloadingtext">
-<h2>Working...</h2>
-<div><i class="fa fa-spinner fa-spin"></i></div>
-</div>
-</div>
-<script type="text/javascript">
-    document.createElement('video');document.createElement('audio');document.createElement('track');
-  </script>
-<style>
-    #IntercomDefaultWidget {
-      display:none;
-    }
-    .selectAW-date-demo, .elTicketAddToCalendar, .elTicketAddToCalendarV2 {
-      display:none;
-    }
-    .video-js {
-      padding-top:56.25%;
-    }
-    .vjs-big-play-button,.vjs-control-bar {
-      z-index: 10 !important;
-    }
-    .vjs-fullscreen {
-      padding-top:0;
-    }
-  </style>
-<script type="text/html" id="cfx_all_canada">
-    <option value="">Select Province</option>
-    <option value="">------------------------------</option>
-    <option value="AB">Alberta</option>
-    <option value="BC">British Columbia</option>
-    <option value="MB">Manitoba</option>
-    <option value="NB">New Brunswick</option>
-    <option value="NL">Newfoundland and Labrador</option>
-    <option value="NS">Nova Scotia</option>
-    <option value="ON">Ontario</option>
-    <option value="PE">Prince Edward Island</option>
-    <option value="QC">Quebec</option>
-    <option value="SK">Saskatchewan</option>
-    <option value="NT">Northwest Territories</option>
-    <option value="NU">Nunavut</option>
-    <option value="YT">Yukon</option>
-</script>
-<script type="text/html" id="cfx_all_states">
-    <option value="">Select State</option>
-    <option value="">------------------------------</option>
-    <option value="AL">Alabama</option>
-    <option value="AK">Alaska</option>
-    <option value="AZ">Arizona</option>
-    <option value="AR">Arkansas</option>
-    <option value="CA">California</option>
-    <option value="CO">Colorado</option>
-    <option value="CT">Connecticut</option>
-    <option value="DE">Delaware</option>
-    <option value="DC">District Of Columbia</option>
-    <option value="FL">Florida</option>
-    <option value="GA">Georgia</option>
-    <option value="HI">Hawaii</option>
-    <option value="ID">Idaho</option>
-    <option value="IL">Illinois</option>
-    <option value="IN">Indiana</option>
-    <option value="IA">Iowa</option>
-    <option value="KS">Kansas</option>
-    <option value="KY">Kentucky</option>
-    <option value="LA">Louisiana</option>
-    <option value="ME">Maine</option>
-    <option value="MD">Maryland</option>
-    <option value="MA">Massachusetts</option>
-    <option value="MI">Michigan</option>
-    <option value="MN">Minnesota</option>
-    <option value="MS">Mississippi</option>
-    <option value="MO">Missouri</option>
-    <option value="MT">Montana</option>
-    <option value="NE">Nebraska</option>
-    <option value="NV">Nevada</option>
-    <option value="NH">New Hampshire</option>
-    <option value="NJ">New Jersey</option>
-    <option value="NM">New Mexico</option>
-    <option value="NY">New York</option>
-    <option value="NC">North Carolina</option>
-    <option value="ND">North Dakota</option>
-    <option value="OH">Ohio</option>
-    <option value="OK">Oklahoma</option>
-    <option value="OR">Oregon</option>
-    <option value="PA">Pennsylvania</option>
-    <option value="RI">Rhode Island</option>
-    <option value="SC">South Carolina</option>
-    <option value="SD">South Dakota</option>
-    <option value="TN">Tennessee</option>
-    <option value="TX">Texas</option>
-    <option value="UT">Utah</option>
-    <option value="VT">Vermont</option>
-    <option value="VA">Virginia</option>
-    <option value="WA">Washington</option>
-    <option value="WV">West Virginia</option>
-    <option value="WI">Wisconsin</option>
-    <option value="WY">Wyoming</option>
-</script>
-<script type="text/html" id="cfx_all_countries">
-    <option value="">Select Country</option>
-    <option value="">------------------------------</option>
-    <option value="United States of America">United States</option>
-    <option value="Canada">Canada</option>
-    <option value="United Kingdom">United Kingdom</option>
-    <option value="Ireland">Ireland</option>
-    <option value="Australia">Australia</option>
-    <option value="New Zealand">New Zealand</option>
-    <option value="">------------------------------</option>
-    <option value="Afghanistan">Afghanistan</option>
-    <option value="Albania">Albania</option>
-    <option value="Algeria">Algeria</option>
-    <option value="American Samoa">American Samoa</option>
-    <option value="Andorra">Andorra</option>
-    <option value="Angola">Angola</option>
-    <option value="Anguilla">Anguilla</option>
-    <option value="Antarctica">Antarctica</option>
-    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-    <option value="Argentina">Argentina</option>
-    <option value="Armenia">Armenia</option>
-    <option value="Aruba">Aruba</option>
-    <option value="Australia">Australia</option>
-    <option value="Austria">Austria</option>
-    <option value="Azerbaijan">Azerbaijan</option>
-    <option value="Bahamas">Bahamas</option>
-    <option value="Bahrain">Bahrain</option>
-    <option value="Bangladesh">Bangladesh</option>
-    <option value="Barbados">Barbados</option>
-    <option value="Belarus">Belarus</option>
-    <option value="Belgium">Belgium</option>
-    <option value="Belize">Belize</option>
-    <option value="Benin">Benin</option>
-    <option value="Bermuda">Bermuda</option>
-    <option value="Bhutan">Bhutan</option>
-    <option value="Bolivia">Bolivia</option>
-    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-    <option value="Botswana">Botswana</option>
-    <option value="Bouvet Island">Bouvet Island</option>
-    <option value="Brazil">Brazil</option>
-    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-    <option value="Brunei Darussalam">Brunei Darussalam</option>
-    <option value="Bulgaria">Bulgaria</option>
-    <option value="Burkina Faso">Burkina Faso</option>
-    <option value="Burundi">Burundi</option>
-    <option value="Cambodia">Cambodia</option>
-    <option value="Cameroon">Cameroon</option>
-    <option value="Canada">Canada</option>
-    <option value="Cape Verde">Cape Verde</option>
-    <option value="Cayman Islands">Cayman Islands</option>
-    <option value="Central African Republic">Central African Republic</option>
-    <option value="Chad">Chad</option>
-    <option value="Chile">Chile</option>
-    <option value="China">China</option>
-    <option value="Christmas Island">Christmas Island</option>
-    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-    <option value="Colombia">Colombia</option>
-    <option value="Comoros">Comoros</option>
-    <option value="Congo">Congo</option>
-    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
-    <option value="Cook Islands">Cook Islands</option>
-    <option value="Costa Rica">Costa Rica</option>
-    <option value="Cote D'ivoire">Cote D'ivoire</option>
-    <option value="Croatia">Croatia</option>
-    <option value="Cuba">Cuba</option>
-    <option value="Cyprus">Cyprus</option>
-    <option value="Czech Republic">Czech Republic</option>
-    <option value="Denmark">Denmark</option>
-    <option value="Djibouti">Djibouti</option>
-    <option value="Dominica">Dominica</option>
-    <option value="Dominican Republic">Dominican Republic</option>
-    <option value="Ecuador">Ecuador</option>
-    <option value="Egypt">Egypt</option>
-    <option value="El Salvador">El Salvador</option>
-    <option value="Equatorial Guinea">Equatorial Guinea</option>
-    <option value="Eritrea">Eritrea</option>
-    <option value="Estonia">Estonia</option>
-    <option value="Ethiopia">Ethiopia</option>
-    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-    <option value="Faroe Islands">Faroe Islands</option>
-    <option value="Fiji">Fiji</option>
-    <option value="Finland">Finland</option>
-    <option value="France">France</option>
-    <option value="French Guiana">French Guiana</option>
-    <option value="French Polynesia">French Polynesia</option>
-    <option value="French Southern Territories">French Southern Territories</option>
-    <option value="Gabon">Gabon</option>
-    <option value="Gambia">Gambia</option>
-    <option value="Georgia">Georgia</option>
-    <option value="Germany">Germany</option>
-    <option value="Ghana">Ghana</option>
-    <option value="Gibraltar">Gibraltar</option>
-    <option value="Greece">Greece</option>
-    <option value="Greenland">Greenland</option>
-    <option value="Grenada">Grenada</option>
-    <option value="Guadeloupe">Guadeloupe</option>
-    <option value="Guam">Guam</option>
-    <option value="Guatemala">Guatemala</option>
-    <option value="Guinea">Guinea</option>
-    <option value="Guinea-bissau">Guinea-bissau</option>
-    <option value="Guyana">Guyana</option>
-    <option value="Haiti">Haiti</option>
-    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
-    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
-    <option value="Honduras">Honduras</option>
-    <option value="Hong Kong">Hong Kong</option>
-    <option value="Hungary">Hungary</option>
-    <option value="Iceland">Iceland</option>
-    <option value="India">India</option>
-    <option value="Indonesia">Indonesia</option>
-    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
-    <option value="Iraq">Iraq</option>
-    <option value="Ireland">Ireland</option>
-    <option value="Israel">Israel</option>
-    <option value="Italy">Italy</option>
-    <option value="Jamaica">Jamaica</option>
-    <option value="Japan">Japan</option>
-    <option value="Jordan">Jordan</option>
-    <option value="Kazakhstan">Kazakhstan</option>
-    <option value="Kenya">Kenya</option>
-    <option value="Kiribati">Kiribati</option>
-    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
-    <option value="Korea, Republic of">Korea, Republic of</option>
-    <option value="Kuwait">Kuwait</option>
-    <option value="Kyrgyzstan">Kyrgyzstan</option>
-    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
-    <option value="Latvia">Latvia</option>
-    <option value="Lebanon">Lebanon</option>
-    <option value="Lesotho">Lesotho</option>
-    <option value="Liberia">Liberia</option>
-    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
-    <option value="Liechtenstein">Liechtenstein</option>
-    <option value="Lithuania">Lithuania</option>
-    <option value="Luxembourg">Luxembourg</option>
-    <option value="Macao">Macao</option>
-    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
-    <option value="Madagascar">Madagascar</option>
-    <option value="Malawi">Malawi</option>
-    <option value="Malaysia">Malaysia</option>
-    <option value="Maldives">Maldives</option>
-    <option value="Mali">Mali</option>
-    <option value="Malta">Malta</option>
-    <option value="Marshall Islands">Marshall Islands</option>
-    <option value="Martinique">Martinique</option>
-    <option value="Mauritania">Mauritania</option>
-    <option value="Mauritius">Mauritius</option>
-    <option value="Mayotte">Mayotte</option>
-    <option value="Mexico">Mexico</option>
-    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
-    <option value="Moldova, Republic of">Moldova, Republic of</option>
-    <option value="Monaco">Monaco</option>
-    <option value="Mongolia">Mongolia</option>
-    <option value="Montserrat">Montserrat</option>
-    <option value="Morocco">Morocco</option>
-    <option value="Mozambique">Mozambique</option>
-    <option value="Myanmar">Myanmar</option>
-    <option value="Namibia">Namibia</option>
-    <option value="Nauru">Nauru</option>
-    <option value="Nepal">Nepal</option>
-    <option value="Netherlands">Netherlands</option>
-    <option value="Netherlands Antilles">Netherlands Antilles</option>
-    <option value="New Caledonia">New Caledonia</option>
-    <option value="New Zealand">New Zealand</option>
-    <option value="Nicaragua">Nicaragua</option>
-    <option value="Niger">Niger</option>
-    <option value="Nigeria">Nigeria</option>
-    <option value="Niue">Niue</option>
-    <option value="Norfolk Island">Norfolk Island</option>
-    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-    <option value="Norway">Norway</option>
-    <option value="Oman">Oman</option>
-    <option value="Pakistan">Pakistan</option>
-    <option value="Palau">Palau</option>
-    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
-    <option value="Panama">Panama</option>
-    <option value="Papua New Guinea">Papua New Guinea</option>
-    <option value="Paraguay">Paraguay</option>
-    <option value="Peru">Peru</option>
-    <option value="Philippines">Philippines</option>
-    <option value="Pitcairn">Pitcairn</option>
-    <option value="Poland">Poland</option>
-    <option value="Portugal">Portugal</option>
-    <option value="Puerto Rico">Puerto Rico</option>
-    <option value="Qatar">Qatar</option>
-    <option value="Reunion">Reunion</option>
-    <option value="Romania">Romania</option>
-    <option value="Russian Federation">Russian Federation</option>
-    <option value="Rwanda">Rwanda</option>
-    <option value="Saint Helena">Saint Helena</option>
-    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-    <option value="Saint Lucia">Saint Lucia</option>
-    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
-    <option value="Samoa">Samoa</option>
-    <option value="San Marino">San Marino</option>
-    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-    <option value="Saudi Arabia">Saudi Arabia</option>
-    <option value="Senegal">Senegal</option>
-    <option value="Serbia and Montenegro">Serbia and Montenegro</option>
-    <option value="Seychelles">Seychelles</option>
-    <option value="Sierra Leone">Sierra Leone</option>
-    <option value="Singapore">Singapore</option>
-    <option value="Slovakia">Slovakia</option>
-    <option value="Slovenia">Slovenia</option>
-    <option value="Solomon Islands">Solomon Islands</option>
-    <option value="Somalia">Somalia</option>
-    <option value="South Africa">South Africa</option>
-    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
-    <option value="Spain">Spain</option>
-    <option value="Sri Lanka">Sri Lanka</option>
-    <option value="Sudan">Sudan</option>
-    <option value="Suriname">Suriname</option>
-    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-    <option value="Swaziland">Swaziland</option>
-    <option value="Sweden">Sweden</option>
-    <option value="Switzerland">Switzerland</option>
-    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
-    <option value="Taiwan, Province of China">Taiwan, Province of China</option>
-    <option value="Tajikistan">Tajikistan</option>
-    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
-    <option value="Thailand">Thailand</option>
-    <option value="Timor-leste">Timor-leste</option>
-    <option value="Togo">Togo</option>
-    <option value="Tokelau">Tokelau</option>
-    <option value="Tonga">Tonga</option>
-    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-    <option value="Tunisia">Tunisia</option>
-    <option value="Turkey">Turkey</option>
-    <option value="Turkmenistan">Turkmenistan</option>
-    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-    <option value="Tuvalu">Tuvalu</option>
-    <option value="Uganda">Uganda</option>
-    <option value="Ukraine">Ukraine</option>
-    <option value="United Arab Emirates">United Arab Emirates</option>
-    <option value="United Kingdom">United Kingdom</option>
-    <option value="United States">United States</option>
-    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
-    <option value="Uruguay">Uruguay</option>
-    <option value="Uzbekistan">Uzbekistan</option>
-    <option value="Vanuatu">Vanuatu</option>
-    <option value="Venezuela">Venezuela</option>
-    <option value="Viet Nam">Viet Nam</option>
-    <option value="Virgin Islands, British">Virgin Islands, British</option>
-    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-    <option value="Wallis and Futuna">Wallis and Futuna</option>
-    <option value="Western Sahara">Western Sahara</option>
-    <option value="Yemen">Yemen</option>
-    <option value="Zambia">Zambia</option>
-    <option value="Zimbabwe">Zimbabwe</option>
-</script>
-<script async>
-      var page_key = '83n3trkp1aytn6zo';
-      var fid = '11321645';
-      var fspos = '1';
-      var fvrs = '1';
-      var cf_tracker = cf_tracker || [];
-      (function() {
-        cf_key = '7btcqp5h';
-        page_key = '83n3trkp1aytn6zo';
-        serverUrl = '//www.thewholesomehabit.com/images/background.png';
-        var cf = document.createElement('script');
-        cf.type = 'text/javascript';
-        cf.async = true;
-        cf.src = '//www.thewholesomehabit.com/vendor.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(cf, s);
-      })();
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=323897806622451&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+  </head>
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MRK95"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <!-- Imagem Ultrasecreto -->
+            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
+
+            <!-- Headline -->
+            <h3 class="my-4"><b>Esse simples segredo pode transformar sua vida!</b></h3>
+
+            <!-- VSL -->
+            <div id="vid_62b47743072e14000c94bdf8" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62b47743072e14000c94bdf8" src="https://images.converteai.net/f69a5503-176d-4451-bbd4-cb4fb4a63aa8/players/62b47743072e14000c94bdf8/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62b47743072e14000c94bdf8" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62b47743072e14000c94bdf8">var s=document.createElement("script");s.src="https://scripts.converteai.net/f69a5503-176d-4451-bbd4-cb4fb4a63aa8/players/62b47743072e14000c94bdf8/player.js",s.async=!0,document.head.appendChild(s);</script>
+
+            <!-- Botão 1 -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/SiGA0TX" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 0); // temporização da Call to Action (em milissegundos)
     </script>
-<script type="text/javascript" src="js/mailcheck.min.js" async="async"></script><script type="text/javascript">window.addEventListener("load",function(){for(var e=["ar","at","au","be","br","ca","ch","cl","cn","cz","de","dk","es","eu","fi","fr","hk","hu","in","it","jp","kr","mx","nl","no","nz","pl","pt","ru","se","tk","tr","tw","uk","us"],i=0;i<e.length;i++){var a=e[i];Mailcheck.defaultTopLevelDomains.push(a),Mailcheck.defaultTopLevelDomains.push("com."+a)}var t=Mailcheck.defaultDomains.slice();for(i=0;i<t.length;i++)for(var s=t[i],l=0;l<e.length;l++){a=e[l];Mailcheck.defaultDomains.push(s+"."+a)}Mailcheck.defaultDomains.push("clickfunnels.com"),$('input[name="email"]').on("blur",function(){_this=this,$(this).mailcheck({suggested:function(e,i){$(".email_suggestion").remove(),$(e).parent().append('<div class="email_suggestion">Did you mean <a href="#">'+i.full+"</a>?</div>")},empty:function(){$(".email_suggestion").remove()}}),$.each("chenowith52@gmail.com, test@test.com, test@gmail.com, test@mail.com".split(","),function(e,i){0<=$(_this).val().search(i.trim())&&($(".email_suggestion").remove(),$(_this).val(""),$(_this).after('<div class="email_suggestion">Please use real email.</div>'))})}),$("body").on("click",".email_suggestion a",function(){$('input[name="email"]').val($(this).text())})});</script><script type="text/javascript">function getURLParameter(e){return decodeURIComponent((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1])}function getURLParameterExact(e){for(var t=window.location.search.substring(1).split("&"),n=0;n<t.length;n++){var r=t[n].split("=");if(r[0]==e)return r[1]}}</script><script type="text/javascript">window.addEventListener("load",function(){$(function(){"null"!=getURLParameter("email")&&($('input[name="contact[email]"]').val(getURLParameterExact("email")),$("[name=email]").val(getURLParameterExact("email"))),"null"!=getURLParameter("name")&&($('input[name="contact[name]"]').val(getURLParameterExact("name")),$("[name=name]").val(getURLParameterExact("name"))),"null"!=getURLParameter("first_name")&&($('input[name="contact[first_name]"]').val(getURLParameter("first_name")),$("[name=first_name]").val(getURLParameter("first_name"))),"null"!=getURLParameter("last_name")&&($('input[name="contact[last_name]"]').val(getURLParameter("last_name")),$("[name=last_name]").val(getURLParameter("last_name"))),"null"!=getURLParameter("address_1")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_1]").val(getURLParameter("address_1"))),"null"!=getURLParameter("address_2")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_2]").val(getURLParameter("address_2"))),"null"!=getURLParameter("city")&&($('input[name="contact[city]"]').val(getURLParameter("city")),$("[name=city]").val(getURLParameter("city"))),"null"!=getURLParameter("state")&&($('input[name="contact[state]"]').val(getURLParameter("state")),$("[name=state]").val(getURLParameter("state"))),"null"!=getURLParameter("zip")&&($('input[name="contact[zip]"]').val(getURLParameter("zip")),$("[name=zip]").val(getURLParameter("zip"))),"null"!=getURLParameter("phone")&&($('input[name="contact[phone]"]').val(getURLParameter("phone")),$("[name=phone]").val(getURLParameter("phone")))})});</script>
-<script type="text/javascript" src="js/pushcrew.js" async="async"></script><meta name="can_calculate_taxes" content="false"><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" data-cf-beacon="{" rayId":"723908402ab6694f","token":"405b708a9b0242e88fda34dc27903686","version":"2022.6.0","si":100}" crossorigin="anonymous"></script>
+
+    <section class="comments py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="fb-comments" style="margin-top: 5px;">
+              <div class="fb-comments-header">
+                <span>21 comentarios</span>
+              </div>
+              <div class="fb-comments-wrapper" id="2">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m2.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Valesca Silva</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Amei vou fazer hoje mesmo pois estou em processo de emagrecimento. Muito obrigada 😘</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>8</likes>
+                        
+                        <date>4 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="3">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m3.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Vitória Pereira</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Ele também me ajudou perdi 22kg obrigado, e ajuda até hoje com essas receitas deliciosas</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>9</likes>
+                        
+                        <date>5 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="4">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m4.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Mariana Martins</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Esse vídeo mudou minha vida, já são 20 kilos a menos em 4 meses ,agradecida</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>11</likes>
+                        
+                        <date>12 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="5">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m5.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Juliana Castro</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Tomei essa vitamina durante 1 mês, acompanhada da dieta de açúcar e carboidratos, perdir 5 quilos, e me sentia bem melhor, faz um ano, agora vou voltar a tomar novamente.</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>15</likes>
+                        
+                        <date>19 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="6">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m6.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Isabella Lopes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Estou feliz, a 7 meses atrás eu estava com 78kg e hoje estou com 54kg até postei a respeito no meu perfil aqui no face o antes e depois 😘😘😘</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>17</likes>
+                        
+                        <date>24 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="7">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m7.jpeg"></td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Roberta Gomes</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Realmente funciona, minha barriga tem diminuído a cada dia. Obrigada por compartilhar 🥰</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>18</likes>
+                        
+                        <date>26 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="fb-comments-wrapper" id="9">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img
+                          src="./assets/img/comentarios/m11.jpeg">
+                      </td>
+                      <td>
+                        <font class="fb-comments-comment-name">
+                          <name>Rafaela Souza</name>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">Emagrece mesmo gente receita testada e aprovada</td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>22</likes>
+                        
+                        <date>39 min</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 5 comentários</button>
+              <div style="display:none" id="more">
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="10">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m12.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Ana Sofia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Maravilhosa melhor de todas fez 7dias tomando e 7 klos já conseguir eliminar tô muito feliz obrigado 😍😍😍</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>41</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="11">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m15.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Laura Flores</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Eu já estou tomando, já eliminei 7 kls, já fez muita diferença, minhas roupas estavam todas apertadas,  ágora já estão largas, estou num pós operatório de coluna por isso engordei muito 15 Kg, estava sentindo muita dor agora amenizou muito depois que emagreci já consigo andar mais q antes 🙏🙏🙏🙏🙏🙏</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>40</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="12">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m16.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Daniela Costa</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Muito Obrigada tem me ajudado e muito,Adorei ...Durmo super bem e vendo resultado ..🌹🥰🙋</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>47</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper" id="13">
+                  <table class="fb-comments-comment">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m17.jpeg"></td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Juliana Dias</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Em duas semanas comecei a ver resultados, muito bom</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>50</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="fb-comments-wrapper">
+                  <table class="fb-comments-comment" id="14">
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" class="fb-comments-comment-img"><img
+                            src="./assets/img/comentarios/m18.jpeg">
+                        </td>
+                        <td>
+                          <font class="fb-comments-comment-name">
+                            <name>Isabelle Correia</name>
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-text">Meu irmão perdeu 6 kl em 15 dias... vou começar hj rsrs</td>
+                      </tr>
+                      <tr>
+                        <td class="fb-comments-comment-actions">
+                          <like>Curtir</like>
+                          ·
+                          <reply>Responder</reply>
+                          ·
+                          <likes>66</likes>
+                          
+                          <date>1 h</date>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Botão 2 -->
+            <div id="cta2" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/HkrDVPl" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    </footer>
 
 
-</body></html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+  </body>
+</html>
